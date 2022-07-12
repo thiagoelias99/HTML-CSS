@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{  
+    box-sizing: border-box;  
+    text-decoration: none; 
+    margin: 0;  
+    padding: 0;
+}   
+
+body{    
+    font-size: 100%; 
+    background-color: #80808029;
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+}  
+
+main{
+    width: 100%;
+}
+
+.max-width{ 
+    max-width: 1024px; 
+    margin: 0 auto; 
+} 
+
+header{
+    height: 55px;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header img{
+    width: 32px;
+    height: 32px;
+}
+
+header h1{
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+#formulario{
+    width: 100vw;
+    background-image: url('./assets/bahia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#orcamento{
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+#barra-orcamento{
+    width: 100%;
+    background-color: #5d15d1;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra-orcamento img{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+#barra-orcamento h2{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+#formulario-form{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-form h3{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+label{
+    font-size: 16px;
+}
+
+.campos{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+    gap: 5px
+}
+
+.digitacao{
+    width: 100%;
+    padding: 0 5px;
+}
+.lado-lado{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lado-lado2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+}
+
+button{
+    width: 160px;
+    height: 32px;
+    border: none;
+    background-color: #5d15d1;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.campos2{
+    margin: 10px 0;
+    width: calc(50% - 5px);
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+    gap: 5px
+}
+
+#ofertas, #anuncios{
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#ofertas h3, #anuncios h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#ofertas h4, #anuncios h4{
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.imagens-ofertas{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px
+}
+
+.imagens-ofertas img, .anuncio img{
+    width: 100%;
+    height: 100%;
+}
+
+.oferta-destaque, .anuncio{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+}
+
+.oferta-secundaria{
+    width: calc((100% / 2) - 10px);
+    height: calc((100% / 2) - 2.5px);
+    position: relative;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #00000050;
+    padding: 0 0 5px 5px;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+}
+
+.anuncios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;    
+}
+
+.caption{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;    
+}
+
+.caption h5{
+    font-size: 16px;    
+}
+
+.caption p{
+    margin-top: 15px;
+    color: grey;
+    font-size: 14px;
+}
+
+footer{
+    width: 100vw;
+    background-color: #5d15d1;
+    margin-top: 32px;
+}
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape-esq{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+.rodape-dir{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    margin: 15px 0;
+}
+
+footer h2{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.footer-icone img{
+    width: 18px;
+}
+
+/*SMARTPHONES*/
+@media only Screen and (max-width: 426px){
+    .max-width{ 
+        max-width: 90%; 
+        margin: 0 auto; 
+    } 
+
+    header div{
+        justify-content: center;
+    }
+
+    .lado-lado{
+        flex-direction: column;
+    }
+
+    .campos2{
+        width: 100%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    button{
+        align-self: center;
+    }
+
+    .lado-lado2{
+        flex-direction: column;
+    }
+
+    .imagens-ofertas{
+        height: auto;
+        flex-flow: column wrap;
+    }
+
+    .oferta-destaque{
+        width: 100%;
+    }
+
+    .oferta-secundaria{
+        width: calc(50% - 5px);
+        height: 120px;
+    }
+
+    .anuncios{
+        align-items: flex-start;
+    }
+
+    .anuncio img{
+        height: 120px;
+    }
+
+    .anuncio img{
+        height: 120px;
+    }
+
+    .caption{
+        height: 150px;
+    }
+
+    footer h2{
+        font-size: 16px;
+    }
+
+    footer{
+        font-size: 80%;
+    }
+}
+
+/*HD*/
+@media only Screen and (max-width: 769px){
+    .max-width{ 
+        max-width: 90%; 
+        margin: 0 auto; 
+    } 
+
+    header div{
+        justify-content: center;
+    }
+
+    .lado-lado{
+        flex-direction: column;
+    }
+
+    .campos2{
+        width: 100%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    button{
+        align-self: center;
+    }
+
+    .lado-lado2{
+        flex-direction: column;
+    }
+
+    .imagens-ofertas{
+        height: auto;
+        flex-flow: column wrap;
+    }
+
+    .oferta-destaque{
+        width: 100%;
+    }
+
+    .oferta-secundaria{
+        width: calc(50% - 5px);
+        height: 120px;
+    }
+
+    .anuncios{
+        align-items: flex-start;
+    }
+
+    .anuncio img{
+        height: 240px;
+    }
+
+    .anuncio img{
+        height: 240px;
+    }
+
+    .caption{
+        height: 80px;
+    }
+}
+
+/*FHD*/
+@media only Screen and (max-width: 1060px){
+    .max-width{ 
+        max-width: 90%; 
+        margin: 0 auto; 
+    } 
+}
