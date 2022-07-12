@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #0000008c;
+}
+
+.max-width {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.margin-top-section {
+    margin-top: 100px;
+}
+
+.max-width-conteudo {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #00cad1;
+}
+
+header div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #004b4c;
+}
+
+#banner {
+    background-image: url('./assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner div {
+    color: white;
+    padding: 20vh 0;
+    text-transform: uppercase;
+}
+
+#sobre,
+#especialidades,
+#contato {
+    margin-top: 100px;
+}
+
+#sobre-descricao {
+    text-align: center;
+}
+
+#sobre-banner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-lista h3 {
+    text-transform: uppercase;
+}
+
+#especialidades {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#especialidades-descricao {
+    text-align: center;
+}
+
+#especialidades-figuras {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 40px;
+}
+
+#especialidades-figuras figure {
+    padding: 0;
+    margin: 0;
+    width: calc((100% / 3) - 40px);
+    box-shadow: 0 0 10px 5px lightgray
+}
+
+#especialidades-figuras img {
+    width: 100%;
+}
+
+#especialidades-figuras figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+#especialidades a {
+    margin-top: 20px;
+    background-color: #00cad1;
+    padding: 10px 30px;
+    color: white;
+}
+
+#contato {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+#contato-contatos {
+    text-align: center;
+}
+
+footer {
+    background-color: #0d6e71;
+}
+
+footer img {
+    padding: 5px;
+    margin: 0;
+}
+
+footer div {
+    text-align: center;
+    padding: 0 20px 10px 20px;
+    color: white;
+    margin: 0;
+}
+
+footer p {
+    margin-top: 0;
+}
+
+@media only Screen and (max-width: 600px) {
+    .max-width {
+        max-width: 600px;
+        margin: 0 0;
+    }
+
+    .max-width-conteudo {
+        max-width: 600px;
+        margin: 0 0;
+        padding: auto 5px;
+    }
+
+    p {
+        padding: 0 2.5px;
+    }
+
+    header div {
+        padding: 0;
+    }
+
+    header div {
+        flex-flow: column nowrap;
+        padding-bottom: 10px;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
+        border-top: 1px solid darkgreen;
+        padding-top: 5px;
+    }
+
+    header nav a{
+        font-size: 18px;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    #banner div {
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    #sobre,
+    #especialidades,
+    #contato {
+        margin-top: 35px;
+    }
+
+    #sobre-banner img {
+        display: none;
+    }
+
+    #especialidades-figuras {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    #especialidades-figuras figure {
+        width: calc(100% - 15px);
+    }
+
+    iframe {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media only Screen and (max-width: 769px) and (min-width: 601px) {
+    .max-width {
+        max-width: 768px;
+        margin: 0 0;
+    }
+
+    .max-width-conteudo {
+        max-width: 768px;
+        margin: 0 0;
+        padding: auto 10px;
+    }
+
+    p {
+        padding: 0 10px;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    #banner div {
+        text-align: center;
+        padding: 150px 0 0 0;
+    }
+
+    #especialidades-figuras {
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+
+    #especialidades-figuras figure {
+        width: calc((100% - 15px) / 2);
+    }
+
+    iframe {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
