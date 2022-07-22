@@ -45,7 +45,7 @@ main{
     text-transform: capitalize;
 }
 
-.form{
+#form{
     position: absolute;
     width: 65%;
     top: 65%;
